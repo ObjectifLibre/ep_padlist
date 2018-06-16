@@ -4,7 +4,7 @@
   <meta name="description" content="All Pads">
   <meta name="viewport" content="width=device-width">
   <link href='http://fonts.googleapis.com/css?family=Cousine:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/list/static/css/main.css">
+  <link rel="stylesheet" href="static/css/main.css">
   <script src="http://code.jquery.com/jquery-2.0.3.min.js" ></script>
 </head>
 <body>
@@ -14,10 +14,10 @@
   </div>
   <ul>
     <% pads.forEach(function(pad){ %>
-      <li><a href="/p/<%= pad.toString() %>"><%= pad.toString() %></a></li>
+      <li><a href="../p/<%= pad.toString() %>"><%= pad.toString() %></a></li>
     <% }) %>
   </ul>
 
-  <script src="/list/static/js/main.js"></script>
+  <script src="static/js/main.js"></script>
 </body>
 </html>
